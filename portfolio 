@@ -1,0 +1,611 @@
+<html>
+        <head><title>Downloaded HTML</title></head>
+        <body>
+            <pre style="white-space: pre-wrap; word-wrap: break-word;"><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anushmita Ojha | Tech & Creative Studio</title>
+    <style>
+        /* --- Premium Neon Pink & Purple Technical Theme --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        :root {
+            --bg-dark: #07050e; /* Deep dark purple-tinted void */
+            --panel-bg: #120d20; /* Dark violet panel base */
+            --border-color: #2e1c4e; /* Deep purple borders */
+            --text-primary: #ffffff;
+            --text-secondary: #a29bb8; /* Soft lavender-tinted secondary text */
+            --accent-pink: #ff007f; /* Neon Pink principal */
+            --accent-purple: #bd00ff; /* Neon Purple secondary */
+            --accent-glow: rgba(255, 0, 127, 0.2); /* Pink glow aura */
+            --purple-glow: rgba(189, 0, 255, 0.25); /* Purple glow aura */
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-primary);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* --- Global Structural Lines --- */
+        header {
+            background-color: rgba(7, 5, 14, 0.85);
+            backdrop-filter: blur(12px);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .logo {
+            font-size: 1.1rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        .logo span { color: var(--accent-pink); text-shadow: 0 0 10px var(--accent-glow); }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-purple);
+            text-shadow: 0 0 10px var(--purple-glow);
+        }
+
+        /* --- Hero Grid --- */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 120px;
+            position: relative;
+        }
+
+        .hero-tag {
+            color: var(--accent-pink);
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 3px;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 0 8px var(--accent-glow);
+        }
+
+        .hero h1 {
+            font-size: 3.8rem;
+            font-family: 'Segoe UI', sans-serif;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            max-width: 900px;
+            background: linear-gradient(45deg, #ffffff, #f1ccff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            color: var(--text-secondary);
+            max-width: 750px;
+            margin-bottom: 3rem;
+        }
+
+        /* --- Infinite Scroll Marquee --- */
+        .marquee-container {
+            background: var(--panel-bg);
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1.2rem 0;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+            box-shadow: inset 0 0 15px rgba(189, 0, 255, 0.05);
+        }
+
+        .marquee-content {
+            display: inline-block;
+            animation: marquee 30s linear infinite;
+        }
+
+        .marquee-content span {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+            margin-right: 3rem;
+        }
+        .marquee-content span::after {
+            content: " ✦";
+            color: var(--accent-purple);
+            margin-left: 3rem;
+            text-shadow: 0 0 8px var(--purple-glow);
+        }
+
+        @keyframes marquee {
+            0% { transform: translate3d(0, 0, 0); }
+            100% { transform: translate3d(-50%, 0, 0); }
+        }
+
+        /* --- Core Layout Sections --- */
+        section {
+            padding: 100px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .sec-num {
+            color: var(--accent-pink);
+            font-size: 0.85rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .sec-title {
+            font-size: 1.8rem;
+            font-family: 'Segoe UI', sans-serif;
+            margin-bottom: 4rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #ffffff;
+        }
+
+        /* --- Splits & Grids --- */
+        .about-split {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .about-block p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .grid-panels {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .panel-card {
+            background-color: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            padding: 2.5rem;
+            border-radius: 4px;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .panel-card:hover {
+            border-color: var(--accent-pink);
+            box-shadow: 0 10px 30px var(--accent-glow);
+            transform: translateY(-3px);
+        }
+
+        .panel-card h3 {
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #fce7ff;
+        }
+
+        .panel-card p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* --- Design Portfolio Architecture --- */
+        .design-showcase {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 2.5rem;
+            margin-top: 2rem;
+        }
+
+        .embed-wrapper {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            border: 1px solid var(--border-color);
+            background: #090612;
+        }
+
+        .embed-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .design-meta {
+            background: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* --- Tech Chips / Subsystem Matrix --- */
+        .tech-matrix {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-top: 1.5rem;
+        }
+
+        .chip {
+            background: #1c1430;
+            border: 1px solid #3d2963;
+            color: #e2d9f3;
+            padding: 0.4rem 1rem;
+            font-size: 0.8rem;
+            border-radius: 2px;
+        }
+
+        /* --- Sandbox Terminal Canvas --- */
+        .game-wrapper {
+            background-color: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            padding: 2.5rem;
+            text-align: center;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        #gameCanvas {
+            background: #090612;
+            border: 1px solid var(--border-color);
+            display: block;
+            margin: 2rem auto 0 auto;
+            max-width: 100%;
+            box-shadow: 0 0 20px rgba(189, 0, 255, 0.1);
+        }
+
+        /* --- Interactive Actions --- */
+        .interactive-btn {
+            background: transparent;
+            color: var(--text-primary);
+            border: 1px solid var(--accent-pink);
+            padding: 1rem 2.5rem;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 0 10px var(--accent-glow);
+        }
+
+        .interactive-btn:hover {
+            background: var(--accent-pink);
+            color: #000000;
+            font-weight: bold;
+            box-shadow: 0 0 25px rgba(255, 0, 127, 0.5);
+        }
+
+        .contact-box {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-input {
+            width: 100%;
+            background: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: var(--accent-purple);
+            box-shadow: 0 0 10px var(--purple-glow);
+        }
+
+        .info-link {
+            color: var(--accent-pink);
+            text-decoration: none;
+        }
+        .info-link:hover {
+            color: var(--accent-purple);
+        }
+
+        /* --- Footer Matrix --- */
+        footer {
+            padding: 4rem 0;
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+        }
+
+        @media(max-width: 900px) {
+            .hero h1 { font-size: 2.5rem; }
+            .about-split { grid-template-columns: 1fr; gap: 2rem; }
+            .design-showcase { grid-template-columns: 1fr; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Navigation Architecture -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">ANUSHMITA<span>.</span>OJHA</div>
+                <ul class="nav-links">
+                    <li><a href="#home">// home</a></li>
+                    <li><a href="#bio">// background</a></li>
+                    <li><a href="#expertise">// architecture</a></li>
+                    <li><a href="#projects">// solutions</a></li>
+                    <li><a href="#lab">// lab</a></li>
+                    <li><a href="#contact">// contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Framework -->
+    <main class="container" id="home">
+        <section class="hero">
+            <div class="hero-tag">B.Tech CSE @ IIIT PUNE</div>
+            <h1>Intersections of Intelligent Software & Creative Strategy.</h1>
+            <p>I build user-centric systems rooted in strong engineering principles, exploring Machine Learning, NLP, and high-fidelity interface design.</p>
+            <div>
+                <a href="#contact" class="interactive-btn">Initiate Connection</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Dynamic Infinite Ticker -->
+    <div class="marquee-container">
+        <div class="marquee-content">
+            <span>UI/UX &amp; Technology</span>
+            <span>Machine Learning</span>
+            <span>Natural Language Processing</span>
+            <span>Social Media Design</span>
+            <span>Graphic Frameworks</span>
+            <span>Digital Branding</span>
+            <span>UI/UX &amp; Technology</span>
+            <span>Machine Learning</span>
+        </div>
+    </div>
+
+    <!-- Background Blueprint -->
+    <section id="bio" class="container">
+        <div class="sec-num">01 //</div>
+        <h2 class="sec-title">The Blueprint</h2>
+        <div class="about-split">
+            <div class="about-block">
+                <p>I am driven by a deep desire to build intelligent applications that solve practical real-world problems. My core engineering base is anchored around Data Structures, Algorithms (DSA), and Object-Oriented paradigms—constantly refined via platforms like Codeforces and LeetCode.</p>
+                <p>My current vector points directly toward Machine Learning and NLP. I focus heavily on how data-driven architectures scale effectively alongside modern frontend structures.</p>
+            </div>
+            <div class="about-block">
+                <p>Beyond standard development parameters, I am an artist with over a decade of dedication to fine/modern arts and four years deep into musical exploration. I actively integrate these unique perspectives into product identity and digital branding matrixes.</p>
+                <p>From freelance design sprints for advertising firms to Model United Nations (MUNs) and local college theater spaces, I rely heavily on effective communications to foster robust community teamwork.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Matrix -->
+    <section id="expertise">
+        <div class="container">
+            <div class="sec-num">02 //</div>
+            <h2 class="sec-title">Core Systems Architectural Focus</h2>
+            <div class="grid-panels">
+                <div class="panel-card">
+                    <h3>01 / Intelligence</h3>
+                    <p>Building algorithms utilizing data configurations, Natural Language Processing networks, and algorithmic problem-solving paradigms.</p>
+                    <div class="tech-matrix">
+                        <span class="chip">Python</span>
+                        <span class="chip">Machine Learning</span>
+                        <span class="chip">NLP</span>
+                    </div>
+                </div>
+                <div class="panel-card">
+                    <h3>02 / Foundations</h3>
+                    <p>Writing reliable code built upon highly cohesive structural principles, optimized runtime bounds, and rigid logic syntax flow.</p>
+                    <div class="tech-matrix">
+                        <span class="chip">C++</span>
+                        <span class="chip">C</span>
+                        <span class="chip">DSA</span>
+                        <span class="chip">OOP</span>
+                    </div>
+                </div>
+                <div class="panel-card">
+                    <h3>03 / Creative Layer</h3>
+                    <p>Synthesizing visual strategies, UI/UX asset hierarchies, graphics templates, and structured promotional branding assets.</p>
+                    <div class="tech-matrix">
+                        <span class="chip">Figma</span>
+                        <span class="chip">Canva</span>
+                        <span class="chip">Dribbble</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dynamic Systems Architecture / Featured Projects Showcase -->
+    <section id="projects" class="container">
+        <div class="sec-num">03 //</div>
+        <h2 class="sec-title">Featured Interface Engineering</h2>
+        <div class="design-showcase">
+            <div class="embed-wrapper">
+                <!-- Embedded Viewer Framework for Modern Technology Archetype -->
+                <iframe src="https://www.canva.com/design/DAHM01GDkFY/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
+            </div>
+            <div class="design-meta">
+                <div>
+                    <h3 style="font-size: 1.4rem; margin-bottom: 1rem; font-family: 'Segoe UI', sans-serif;">Blue White Modern Technology Architecture</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem;">
+                        A modular, 10-page systemic framework designed to break down sophisticated tech topologies into clean, high-fidelity layouts.
+                    </p>
+                    <div class="tech-matrix">
+                        <span class="chip">System Presentation</span>
+                        <span class="chip">Modular Layout</span>
+                        <span class="chip">Vector Systems</span>
+                    </div>
+                </div>
+                <div style="margin-top: 2rem;">
+                    <a href="https://www.canva.com/d/amYNXCBtY8GCSaq" target="_blank" class="interactive-btn" style="padding: 0.8rem 1.5rem; font-size: 0.75rem;">Inspect Source Workspace</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Sandbox Interactive Lab -->
+    <section id="lab">
+        <div class="container">
+            <div class="sec-num">04 //</div>
+            <h2 class="sec-title">The Experimental Lab Widget</h2>
+            <div class="game-wrapper">
+                <h3>🕹️ Reactive Sandbox Matrix</h3>
+                <p style="color: var(--text-secondary); margin-top: 0.5rem; font-size: 0.85rem;">Interact directly with the layout grid. Use your mouse array to command the paddle system to capture descending blocks.</p>
+                <canvas id="gameCanvas" width="400" height="300"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Routing -->
+    <section id="contact" class="container">
+        <div class="sec-num">05 //</div>
+        <h2 class="sec-title">Secure Connection Terminal</h2>
+        <div class="contact-box">
+            <p style="text-align: center; margin-bottom: 2.5rem; color: var(--text-secondary);">
+                Always eager to connect for research collaborations, software pipelines, or design architecture projects.<br><br>
+                Direct Link: <a href="mailto:anushmitaojha@gmail.com" class="info-link">anushmitaojha@gmail.com</a> | <a href="tel:+919051416428" class="info-link">+91 90514 16428</a>
+            </p>
+            <form onsubmit="event.preventDefault(); alert('Data Packet Transmission Successful!');">
+                <input type="text" class="form-input" placeholder="// DISPATCHER NAME" required>
+                <input type="email" class="form-input" placeholder="// DISPATCHER EMAIL" required>
+                <textarea class="form-input" placeholder="// OBJECTIVE MEMO & SPECIFICATIONS" rows="5" required></textarea>
+                <button type="submit" class="interactive-btn" style="width: 100%;">Transmit Packet</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer System Nodes -->
+    <footer>
+        <p>SYSTEM CODE DEPLOYED // ANUSHMITA OJHA © 2026</p>
+        <p style="font-size: 0.7rem; color: #53457a; margin-top: 0.5rem;">[ENGINE CONFIGURED VIA COURIER MONOSPACE CORE]</p>
+    </footer>
+
+    <!-- Interactive Logic Node -->
+    <script>
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+
+        let score = 0;
+        let paddleWidth = 75;
+        let paddleHeight = 8;
+        let paddleX = (canvas.width - paddleWidth) / 2;
+
+        let blockX = Math.random() * (canvas.width - 15);
+        let blockY = 0;
+        let blockSpeed = 2.5;
+        let blockSize = 14;
+
+        canvas.addEventListener('mousemove', (e) => {
+            const rect = canvas.getBoundingClientRect();
+            const rootX = e.clientX - rect.left;
+            paddleX = rootX - paddleWidth / 2;
+            if(paddleX < 0) paddleX = 0;
+            if(paddleX + paddleWidth > canvas.width) paddleX = canvas.width - paddleWidth;
+        });
+
+        function drawGame() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Item Node (Updated to Neon Pink)
+            ctx.fillStyle = '#ff007f';
+            ctx.shadowBlur = 10;
+            ctx.shadowColor = '#ff007f';
+            ctx.fillRect(blockX, blockY, blockSize, blockSize);
+
+            // Paddle Node (Updated to Neon Purple)
+            ctx.fillStyle = '#bd00ff';
+            ctx.shadowBlur = 10;
+            ctx.shadowColor = '#bd00ff';
+            ctx.fillRect(paddleX, canvas.height - paddleHeight - 12, paddleWidth, paddleHeight);
+
+            // Reset shadows for fonts
+            ctx.shadowBlur = 0;
+
+            // Metrics Matrix Terminal Display (Updated style)
+            ctx.fillStyle = '#a29bb8';
+            ctx.font = '11px Courier New';
+            ctx.fillText(' CAPTURED_NODES: ' + score, 15, 25);
+
+            blockY += blockSpeed;
+
+            if (blockY + blockSize >= canvas.height - paddleHeight - 12) {
+                if (blockX + blockSize >= paddleX && blockX <= paddleX + paddleWidth) {
+                    score++;
+                    blockY = 0;
+                    blockX = Math.random() * (canvas.width - blockSize);
+                    blockSpeed += 0.25; 
+                }
+            }
+
+            if (blockY > canvas.height) {
+                score = 0;
+                blockSpeed = 2.5;
+                blockY = 0;
+                blockX = Math.random() * (canvas.width - blockSize);
+            }
+
+            requestAnimationFrame(drawGame);
+        }
+        drawGame();
+    </script>
+</body>
+</html></pre>
+        </body>
+    </html>
